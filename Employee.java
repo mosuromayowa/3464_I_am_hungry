@@ -22,6 +22,15 @@ public Employee (String name, int birthYear) {
 
     class Vehicle { // This would represent the composite association
 
+    private String make;
+    private String plate;
+    private String Color;
+
+
+        public String getMake() {
+            return make;
+        }
+
     }
 }
 
