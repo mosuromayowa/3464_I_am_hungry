@@ -12,10 +12,14 @@ public class Car extends Employee.Vehicle {
         return type;
     }
     // make, plate, color, category, gear, type
-    public Car (String make, String plate, String color,String category, String gear, String type) {
-        super(make,plate,color);
+    public Car (String make, String plate, String color, String gear) {
+        super(make,plate,color,VehicleType.RACE);
         this.gear = gear;
-        this.type = type;
+
+        //Overloading the methods for the cars
+
+
+
 
 
 

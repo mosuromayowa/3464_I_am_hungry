@@ -27,6 +27,10 @@ public class Employee {
 
         private VehicleType type; // using the enum here
 
+        public Vehicle() {
+
+        }
+
         public String getMake() {
             return make;
         }
