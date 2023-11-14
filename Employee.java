@@ -19,4 +19,9 @@ public Employee (String name, int birthYear) {
     public int getBirthYear() {
         return birthYear;
     }
+
+    class Vehicle { // This would represent the composite association
+
+    }
 }
+
