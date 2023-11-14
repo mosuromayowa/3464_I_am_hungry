@@ -4,10 +4,26 @@ public class Manager extends Employee {
 
     private int nbClients;
 
-    public Manager (String name,  int birthYear, int age, int rate, int nbClients, int nbTravelDays){
-        super(name, birthYear, age, rate);
+    // Manager: name, birthYear, nbClients, nbTravelDays, rate
+    public Manager (String name,  int birthYear,  int nbClients, int nbTravelDays, int rate){
+        super(name,birthYear);
         this.nbTravelDays = nbTravelDays;
         this.nbClients = nbClients;
+    }
+
+    public int getNbClients() {
+        return nbClients;
+    }
+
+    public int getNbTravelDays() {
+        return nbTravelDays;
+    }
+
+    public Manager(String name, int birthYear, int nbClients, int nbTravelDays) {
+        super(name, birthYear);
+        this.nbTravelDays = nbTravelDays;
+        this.nbClients = nbClients;
+
     }
 
 }

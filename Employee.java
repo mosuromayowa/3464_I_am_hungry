@@ -2,22 +2,21 @@ public class Employee {
 
     private int birthYear;
     private String name;
-private int age;
 
+    private int rate;
 
-private int rate;
-
-public Employee (String name,  int birthYear, int age, int rate) {
-    this.age = age;
+public Employee (String name, int birthYear) {
     this.name = name;
     this.birthYear = birthYear;
-    this.rate = rate;
+    this.rate = this.rate;
 
 }
 
+    public String getName() {
+        return name;
+    }
 
-
-
-
-
+    public int getBirthYear() {
+        return birthYear;
+    }
 }
