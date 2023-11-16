@@ -4,6 +4,11 @@ public class Car extends Employee.Vehicle {
 
     private String type;
 
+    public Car(String make, String plate, String color, String family, Gear gear, CarType carType) {
+        //Overloading the methods for the cars
+    }
+
+
     public String getGear() {
         return gear;
     }
@@ -17,7 +22,6 @@ public class Car extends Employee.Vehicle {
         this.gear = gear;
 
 
-        //Overloading the methods for the cars
 
 
 
