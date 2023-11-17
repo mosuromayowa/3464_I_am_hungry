@@ -9,4 +9,8 @@ public class Tester extends Employee{
 
     }
 
+    @Override
+    public double annualIncome() {
+        return 0;
+    }
 }

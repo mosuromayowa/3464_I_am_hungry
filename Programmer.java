@@ -25,4 +25,9 @@ public class Programmer extends Employee{
     public Programmer(String name, int year, int nbProject, int i) {
 
     }
+
+    @Override
+    public double annualIncome() {
+        return 0;
+    }
 }

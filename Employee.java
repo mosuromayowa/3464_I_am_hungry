@@ -1,11 +1,11 @@
-public class Employee {
+public abstract class Employee implements Contract {
+
 
     private int birthYear;
     private String name;
     private int rate;
 
     public Employee() {
-        this.name = name;
         this.birthYear = birthYear;
         this.rate = this.rate;
 
@@ -56,6 +56,11 @@ public class Employee {
 
     }
 
+public abstract double annualIncome();
 
+    @Override
+    public void signContract() {
+
+    }
 }
 

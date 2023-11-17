@@ -39,6 +39,8 @@ public class Manager extends Employee {
     }
 
 
-
-
+    @Override
+    public double annualIncome() {
+        return 0;
+    }
 }
