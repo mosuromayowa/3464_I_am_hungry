@@ -4,11 +4,14 @@ public class Employee {
     private String name;
     private int rate;
 
-    public Employee(String name, int birthYear) {
+    public Employee() {
         this.name = name;
         this.birthYear = birthYear;
         this.rate = this.rate;
 
+    }
+
+    public Employee(String name, int birthYear) {
     }
 
     public String getName() {
@@ -52,6 +55,7 @@ public class Employee {
 
 
     }
+
 
 }
 

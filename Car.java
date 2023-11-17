@@ -5,7 +5,7 @@ public class Car extends Employee.Vehicle {
     private String type;
 
     public Car(String make, String plate, String color, String family, Gear gear, CarType carType) {
-        //Overloading the methods for the cars
+
     }
 
 
@@ -20,11 +20,6 @@ public class Car extends Employee.Vehicle {
     public Car (String make, String plate, String color, String gear) {
         super(make,plate,color,VehicleType.RACE);
         this.gear = gear;
-
-
-
-
-
 
 
 
