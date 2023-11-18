@@ -1,3 +1,4 @@
 public interface Contract {
-    void signContract(Contract contract);
+    void signContract();
+    boolean contractInfo();
 }

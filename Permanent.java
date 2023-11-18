@@ -9,7 +9,7 @@ public class Permanent extends Employee implements Contract {
 
 
     public Permanent(int nbChildren, boolean married, int monthlySalary, int bonusPerChildPerMonth, int accumulatedDays) {
-
+        super();
         this.nbChildren = nbChildren;
         this.married = married;
         this.monthlySalary = monthlySalary;
@@ -25,6 +25,15 @@ public class Permanent extends Employee implements Contract {
 
     @Override
     public void signContract() {
+        //Permanent contract = null; //test
+        //contract.signContract();
 
     }
+
+    @Override
+    public boolean contractInfo() {
+        return false;
+    }
+
+
 }

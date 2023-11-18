@@ -5,13 +5,19 @@ public abstract class Employee implements Contract {
     private String name;
     private int rate;
 
-    public Employee() {
+// privet vehicle vehicle
+    public Employee(String name, int birthYear, int rate, int nbTravelDays) {
+        this.name = name;
         this.birthYear = birthYear;
-        this.rate = this.rate;
+        this.rate = rate;
+    }
+
+    public Employee() {
 
     }
 
-    public Employee(String name, int birthYear) {
+    public Employee(String _name, int birthYear) {
+        name = _name;
     }
 
     public String getName() {
@@ -20,6 +26,10 @@ public abstract class Employee implements Contract {
 
     public int getBirthYear() {
         return birthYear;
+    }
+
+    public int getRate() {
+        return rate;
     }
 
     public static class Vehicle { // This would represent the composite association
@@ -36,10 +46,13 @@ public abstract class Employee implements Contract {
             this.color = color;
             this.type = type;
 
+
+
         }
         public Vehicle() {
 
         }
+
 
         public String getMake() {
             return make;
@@ -60,7 +73,7 @@ public abstract double annualIncome();
 
     @Override
     public void signContract() {
-
     }
+
 }
 

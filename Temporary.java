@@ -1,4 +1,4 @@
-public class Temporary extends Employee {
+public class Temporary extends Employee implements Contract {
 
     private int hourlySalary;
 
@@ -13,6 +13,11 @@ public class Temporary extends Employee {
     @Override
     public double annualIncome() {
         return 0;
+    }
+
+    @Override
+    public boolean contractInfo() {
+        return false;
     }
 }
 

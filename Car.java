@@ -13,9 +13,7 @@ public class Car extends Employee.Vehicle {
         return gear;
     }
 
-    public String getType() {
-        return type;
-    }
+
     // make, plate, color, category, gear, type
     public Car (String make, String plate, String color, String gear) {
         super(make,plate,color,VehicleType.RACE);

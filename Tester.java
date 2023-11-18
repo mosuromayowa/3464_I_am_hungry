@@ -4,7 +4,7 @@ public class Tester extends Employee{
 
     // Tester: name, birthYear, nbBugs, rate
     public Tester(String name, int year, int nbugs, int rate, Motorcycle m2) {
-        super();
+        super(name,year,nbugs,rate);
         this.nbugs = nbugs;
 
     }
@@ -12,5 +12,10 @@ public class Tester extends Employee{
     @Override
     public double annualIncome() {
         return 0;
+    }
+
+    @Override
+    public boolean contractInfo() {
+        return false;
     }
 }

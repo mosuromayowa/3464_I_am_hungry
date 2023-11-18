@@ -29,6 +29,9 @@ public class Management {
         employees.add(new Tester("Pierre", 1987, 124, 50, m2));
         employees.add(new Programmer("Matt", 1981, 5, 110));
         employees.add(new Programmer("Sarah", 1986, 3));
+        for (Employee employee : employees) {
+            System.out.println("We have a new employee:" + employee.getName());
+        }
     }
 
     //    Employee constructors
@@ -37,6 +40,8 @@ public class Management {
     // Tester: name, birthYear, nbBugs, rate, employeeVehicle
     void hireTest2() {
         employees.clear();
+        // make an object and pass these values as parameters
+
         employees.add(new Manager("Serge", 1985, 30, 4, vt1));
         employees.add(new Manager("Cindy", 1974, 20, 6, 80, vt2));
         employees.add(new Programmer("Paul", 1993, 3, 75, m1));
@@ -67,12 +72,12 @@ public class Management {
         Contract t2 = new Temporary(50, 60);
         Contract p3 = new Permanent(1, true, 4000, 100, 20);
         Contract p4 = new Permanent(4, true, 4500, 100, 19);
-        Serge.signContract(p1);
-        Cindy.signContract(p2);
-        Paul.signContract(t1);
-        Matt.signContract(t2);
-        Pierre.signContract(p3);
-        Sarah.signContract(p4);
+        Serge.signContract();
+        Cindy.signContract();
+        Paul.signContract();
+        Matt.signContract();
+        Pierre.signContract();
+        Sarah.signContract();
 
         employees.add(Serge);
         employees.add(Cindy);
@@ -82,9 +87,14 @@ public class Management {
         employees.add(Sarah);
 
         for (Employee employee : employees) {
-            System.out.println("-------------------------");
-            System.out.println(employee);
-            System.out.println("-------------------------");
+            if (employee instanceof Manager){
+                System.out.println("-------------------------");
+                System.out.println("Name:" + employee.getName() + " is a manager");
+                System.out.println(employee.getName());
+                System.out.println("-------------------------");
+
+            }
+
         }
 
         System.out.println("-------------------------");
@@ -97,7 +107,7 @@ public class Management {
 
         // updating Matt's contract
         Contract p5 = new Permanent(1, true, 5000, 200, 30);
-        Matt.signContract(p5);
+        Matt.signContract();
 
         System.out.println("-------------------------");
         System.out.println("Contracts: ");
