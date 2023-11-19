@@ -5,6 +5,8 @@ public abstract class Employee implements Contract {
     private String name;
     private int rate;
 
+    private int age;
+
 // privet vehicle vehicle
     public Employee(String name, int birthYear, int rate, int nbTravelDays) {
         this.name = name;
@@ -30,6 +32,12 @@ public abstract class Employee implements Contract {
 
     public int getRate() {
         return rate;
+    }
+
+    public int getAge() {
+        final int current_year = 2023;
+        age = current_year - birthYear;
+        return age;
     }
 
     public static class Vehicle { // This would represent the composite association

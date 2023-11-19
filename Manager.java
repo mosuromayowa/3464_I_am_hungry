@@ -22,8 +22,9 @@ public class Manager extends Employee implements Contract {
 
     }
 
-    public Manager(String name, int birthYear, int nbClients, int nbTravelDays, Vehicle vehicle) {
-        super();
+    public Manager(String name, int birthYear, int nbClients, int nbTravelDays, Vehicle vehicle)
+    {
+        super(name,birthYear);
     }
 
     public Manager(String name, int birthYear, int nbClients, int nbTravelDays)
