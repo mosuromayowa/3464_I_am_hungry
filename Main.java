@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-
         //Test part 1
         System.out.println("Test 1: ");
-        var management = new Management();
+        Management management = new Management();
         management.hireTest1();
 
         // Test part 2
